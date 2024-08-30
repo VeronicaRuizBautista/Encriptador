@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <main>
+        <div class="a">
+            <img src="storage/img/Logo.png" alt="">
+        </div>
+        <div class="container">
+            <form id="form">
+                <textarea name="chain" id="ingresar-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="aviso">
+                    <img src="storage/img/IconoExclamacion.png" alt="">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="inputs">
+                    <input type="submit" data-action="encriptar" value="Encriptar">
+                    <input type="submit" data-action="desencriptar" value="Desencriptar">
+                </div>
+            </form>
+            
+        </div>
+    </main>
+    <section class="banner">
+        <article class="mensaje active">
+            <div class="img">
+                <img src="storage/img/Muñeco.png" alt="">
+            </div>
+            <div>
+            <div class="contenido">
+                <h1>Ningun mensaje fue encontrado</h1>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>             
+            </div>
+        </article>
+        <article class="mensaje2 ">
+            <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam assumenda cupiditate reiciendis magni maiores officiis soluta, placeat, et recusandae dolorum earum odit laudantium! Voluptates quae minima, aperiam illo distinctio architecto!</p>
+            <input id="copy" type="button" value="Copiar" data-action="copy">  
+        </article>
+    </section>
+</body>
+</html>

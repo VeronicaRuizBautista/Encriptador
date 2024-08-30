@@ -1,0 +1,7 @@
+:root{
+    --color-fondo :rgb(240, 235, 235);
+    --color-blanco: white;
+    --negro-grisaceo:rgba(75, 74, 74, 0.884);
+    --azul-oscuro: rgb(40, 40, 128);
+    --azul-claro: rgb(173, 188, 230);
+}
