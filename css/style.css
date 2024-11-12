@@ -9,17 +9,18 @@ body {
     background-color: var(--color-fondo);
     display: flex;
     width: 100%;
-    height: 100vh;
+    overflow: hidden;
 }
 main {
     width: 80%;
     /* background-color: darkcyan; */
     height: 100vh;
     display: flex;
+    overflow: hidden;
 }
 .a{
     /* background-color: forestgreen; */
-    width: 20%;
+    width: 10%;
     height: 90%;
     padding-top: 3vh;
     
@@ -31,16 +32,27 @@ main {
     display: flex;
     align-items: center;
 }
+.textarea{
+    width: 100%;
+    height: 45vh;
+    padding: 10px;  
+    border: none; 
+    border-radius: 5px;      
+    resize: none; /* Evita que el usuario cambie el tamaño */
+    outline: none; 
+    margin-top: 5vh;
+}
 form {
     width: 80%;
     height: 80%;
+    margin-top: 5vh;
     /* background-color: violet; */
 }
 form :placeholder-shown{
     width: 100%;
-    height: 60%;
+    height: 40vh;
     border: none;
-    background-color: var(--color-fondo);
+    /* background-color: var(--color-fondo); */
 }
 .aviso{
     /* background-color: darkgray; */
@@ -50,9 +62,13 @@ form :placeholder-shown{
     height: 20vh;
     color: var(--negro-grisaceo);
 }
-.aviso img{
-    width: 1vw;
-    height: 2vh;
+.aviso .img{
+    width: 2vw;
+    height: 3vh;
+}
+.aviso .img img{
+    width: 100%;
+    height: 100%;
 }
 .inputs {
     width: 90%;
@@ -61,6 +77,11 @@ form :placeholder-shown{
     display: flex;
     align-items: end;
     justify-content: space-evenly;
+}
+ input:hover{
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 10px var(--azul-oscuro);
 }
 .inputs input:first-of-type{
     width: 30%;
@@ -240,7 +261,7 @@ form :placeholder-shown{
     }
     
 }
-@media(max-width: 1300px){
+@media(max-width: 1000px){
     body {
         flex-direction: column;
         height: 140vh;

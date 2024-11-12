@@ -27,6 +27,7 @@ fomulario.addEventListener("submit", function(e){
 })
 
 function Encriptar(object){
+    console.log("fd")
     let palabra = object.chain.split(" ");
     let resultado = palabra.map((value, index) => {
         value = value.split('');
@@ -39,6 +40,7 @@ function Encriptar(object){
             else return caracter
         }).join("")
     }).join(" ");
+    console.log(resultado)
     return resultado;
 }
 function Desencriptar(object){
